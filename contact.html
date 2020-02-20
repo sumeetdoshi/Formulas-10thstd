@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Us</title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158176787-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-158176787-2');
-</script>
-
+	<title>Contact Page</title>
 </head>
-<body><fieldset>
-	<legend>Contact Us</legend>
-	<script type="text/javascript">
-		function comment()
-		{
-			alert("Your comments is sent");
-		}
+<body><fieldset><legend>Contact Form</legend>
+	<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf2PnKsiUrRZnotgKJzp91NzMsF0hTQqFPWiGvSAOj5IgnRig/formResponse">
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted)(window.location='index.html';)"></iframe>
 
-	</script>
-E-mail :<br><input type="email" name="" placeholder="Enter E-mail" required><br><br>
-Enter your suggestion or complaint :<br><textarea width="250px" required>Enter Suggestion</textarea><br><br>
-<button type="submit" onclick="comment()">Submit</button>
+
+E-mail:<br><input type="email" name="entry.123954360" required placeholder="Enter Email"><br><br>
+Enter comment:<br><textarea name="entry.2044080447" required></textarea><br><br>
+<button type="submit" onclick="hello()">Submit</button>
 <button type="reset">Reset</button>
-<h4><font face="helvetica">For more details contact us.<br><br> 
-	<a href="mailto:website3567@gmail.com" target="_blank"><img src="contactbtn.jpg" width="150px" title="Contact ">
-</a></h4></font>
-<a href="index.html" title="Home Page">Go to Home page.</a>
-
-
-</body></fieldset>
+	</fieldset>
+	</form>
+	<script type="text/javascript">
+		function hello()
+		{
+			window.location.assign("index.html");
+		}
+	</script>
+</body>
 </html>
