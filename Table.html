@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+</head>
+<body>
+<script type="text/javascript">
+    function hello()
+    {
+        var a = prompt("Enter number to find its multiplication table");
+            var i;
+            if(a){
+            for(i=1;i<=10;i++)
+            {
+               
+            document.write("<h1>"+a+" x " +i+" = " +a*i+"</h1>"+"<br>");
+            }
+        }
+        else{
+            document.write("<h1>"+"Number is Required!."+"</h1>");
+        }
+
+    }
+
+
+</script><fieldset><legend>Multiplication table Generator.</legend>
+
+<h1><font face="verdana" color="33FF9C">Click to find multiplication table.</h1></font>
+<h3><font face="arial">If you are finding problem in learing multiplication tables.<br>So for you I have created a tool that will provide you multiplication table.</h3></font>
+<a onclick="hello()"><img src="calculate.jfif" width="150px" title="Calculate"></a>
+</body></fieldset>
+</html>
