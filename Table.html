@@ -15,7 +15,7 @@
 <script type="text/javascript">
     function hello()
     {
-        var a = prompt("Enter number to find its multiplication table");
+        var a = document.getElementById('text1').value;
             var i;
             if(a){
             for(i=1;i<=10;i++)
@@ -31,18 +31,24 @@
     }
 
 
-</script><fieldset><legend>Multiplication table Generator.</legend>
+</script>
+<fieldset><legend>Multiplication table Generator.</legend>
+
+
 
 <h1><font face="verdana" color="33FF9C">Click to find multiplication table.</h1></font>
 <h3><font face="arial">If you are finding problem in learing multiplication tables.<br>So for you I have created a tool that will provide you multiplication table.</h3></font>
+
+<h2><font face="verdana">Enter Number:</font></h2><br><input type="Number" name="" id="text1" placeholder="Enter Number" autofocus><br><br>
+
 <a onclick="hello()"><img src="calculate.jfif" width="150px" title="Calculate"></a>
 
 <a href="index.html"><h2><font face="arial">Go to Home Page</font></h2></a>
 
 </fieldset>
-    <center>
-		<a href="contact.html" target="_blank"><font color="DE33FF" face="arial">Contact Us</a> | 
-		<a href="About.html"><font color="DE33FF" face="arial">About Us</a>
+	<center>
+		<a href="contact.html" target="_blank"><font color="3364FF" face="arial">Contact Us</a> | 
+		<a href="About Us.html"><font color="3364FF" face="arial">About Us</a>
 		</center>
 </body>
 </html>
